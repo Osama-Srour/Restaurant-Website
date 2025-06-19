@@ -1,0 +1,261 @@
+/* Navbar */
+.nav-container {
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 1em 4em;
+    padding:  auto  ;
+    font-family: 'Pacifico', cursive;
+
+
+}
+
+.Restaurant-name{
+    padding: 0em 4em;
+}
+
+.nav-links {
+    flex-grow: 4;
+    
+}
+
+.nav-links a, .nav-links img {
+    
+    text-decoration: none;
+    margin: 0.3em;
+    padding: 0.3em;
+    font-size: large
+}
+
+.navlink:hover {
+    font-size: x-large;
+    transition: font-size 0.3s ease-in-out;
+}
+
+
+.media-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.media-links a {
+    font-family: 'Lobster', cursive;
+    text-decoration: none;
+    margin: 0.3em;
+    padding: 0.3em;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+/* Main */
+.main-container {
+    display: flex ;
+    flex-wrap: wrap; /* Allows wrapping of the sections */
+    width: 100%;
+    height: 100vh; 
+    flex: 1 1 30%;
+    
+}
+
+.main-container {
+    flex-direction: row;
+}
+.left-article {
+    flex: 1 1 30%; /* Adjust width proportionally */
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-size: cover;
+    
+}
+
+.left-article form {
+    position: sticky;
+      top: 15%; /* Stick 10px from the top when scrolling */
+      left: 0; /* Stay within the left side of the parent */
+      right: 0; /* Stay within the right side of the parent */
+      border: solid ;
+      background-color: rgba(248, 249, 250, 0.8);
+      padding: 1em;
+      margin: 1em;
+      margin-top: 15%;
+      border-radius: 10px;
+      font-size: 0.8em;
+      font-family: "Sofadi One", system-ui;
+      font-weight: 400;
+      font-style: normal;
+}
+
+
+.left-article form:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+.sections-container {
+    flex: 1 1 70%;
+    padding: 20px;
+    background-color: #fff;
+    
+    font-size: 1.2em;
+}
+
+
+.about,  .location , .menu{
+    padding: 2em;
+    text-align: center;
+    font-size: 1em;
+    border-top:ridge ;
+    font-family: "Sofadi One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.about img {
+    filter: drop-shadow(8px 8px 10px black);
+    margin: 1%;
+
+}
+
+.location iframe{
+    border-radius: 8px ;
+    border: solid;
+    border-width:thin ;
+    width: 80% ;
+    height: 400px;
+}
+
+
+
+
+
+
+.carousel{
+
+    margin: 50px auto;
+    overflow: visible;
+    padding: 2% 30%;
+}
+
+
+
+
+.menu-list{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    font-family: 'Cedarville Cursive', cursive;
+
+}
+
+.menu-list img {
+    height: 200px;
+    margin: 0px;
+  }
+  
+.menu-list figure {
+    display: inline-block;
+    position: relative;
+    background-color: white;
+    text-align: center;
+    font-size: 10px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 1px 2px 3px black;
+  }
+   
+.menu-list figure:hover {
+    box-shadow: 10px 10px 20px rgb(234, 224, 224);
+    -webkit-transform: scale(1.2,1.2);
+    z-index: 20;
+  }
+
+
+
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    margin: 0;
+    text-align: center;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+    font-family: "Sofadi One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 800px) {
+    body{
+        background-color: antiquewhite;
+    }
+    .Restaurant-name{
+        padding: 0em 0em;
+    }
+    
+    
+    .nav-links {
+        display: block;
+    }
+
+    .nav-links a {
+        display: block;
+        border-bottom: 1px solid;
+        text-align: center;
+    }
+
+    .nav-container{
+        padding: 1em;
+    }
+
+    .main-container {
+        display: block;
+        flex-direction: row;
+    }
+
+    .left-article {
+        display: block;
+        width: 100%;
+        height: auto;
+        box-shadow: none;
+    }
+
+    .left-article form {
+        margin-top: 1em;
+        position: static
+    }
+
+    .about,  .location , .menu{
+        font-size: 1em;
+    }
+
+   
+
+    .location iframe{
+        border-radius: 8px ;
+        border: solid;
+        border-width:thin ;
+        height: max-content
+
+    }
+
+    .menu-list figure:hover {
+     box-shadow: 10px 10px 20px rgb(234, 224, 224);
+        -webkit-transform: scale(1.1,1.1);
+        z-index: 20;
+      }
+    
+    
+    
+
+
+}
