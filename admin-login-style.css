@@ -1,0 +1,16 @@
+
+            
+            .inside-border{
+                border-style: double ;
+                border-width: .4em ;
+                border-color: #2E8D7E;
+                border-radius: 20px;
+            }
+
+            .btn{
+                background-color: #2E8D7E;
+            }
+
+            .btn:hover{
+                background-color: #3ec3af;
+            }
