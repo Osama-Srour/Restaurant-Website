@@ -19,6 +19,10 @@ setMainSectionImg = () => {
 
 }
 
+adminlogin =() =>{
+    
+}
+
 
 
 
